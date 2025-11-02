@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Pendaftaran</title>
+</head>
+<body>
+    <h2>Formulir Pendaftaran</h2>
+
+    <form>
+        <fieldset>
+            <legend>Data Diri</legend>
+
+            <label>Nama:</label><br>
+            <input type="text" name="nama" placeholder="Masukkan nama" required><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" name="email" placeholder="Masukkan email" required><br><br>
+
+            <label>Kata Sandi:</label><br>
+            <input type="password" name="password" required><br><br>
+
+            <label>Usia:</label><br>
+            <input type="number" name="usia" min="1" max="100"><br><br>
+
+            <label>Tanggal Lahir:</label><br>
+            <input type="date" name="lahir"><br><br>
+
+            <label>Jenis Kelamin:</label><br>
+            <input type="radio" name="gender" value="Laki-laki"> Laki-laki
+            <input type="radio" name="gender" value="Perempuan"> Perempuan<br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informasi Tambahan</legend>
+
+            <label>Minat:</label><br>
+            <input type="checkbox" name="minat" value="AI"> AI
+            <input type="checkbox" name="minat" value="Web"> Web
+            <input type="checkbox" name="minat" value="Game"> Game<br><br>
+
+            <label>Nomor Telepon:</label><br>
+            <input type="tel" name="telepon"><br><br>
+
+            <label>Link Portofolio:</label><br>
+            <input type="url" name="portofolio"><br><br>
+
+            <label>Upload Foto:</label><br>
+            <input type="file" name="foto"><br><br>
+        </fieldset>
+
+        <input type="reset" value="Reset">
+        <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>
